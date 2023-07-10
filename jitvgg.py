@@ -105,6 +105,7 @@ losses = []  # 损失列表
 losses_idx = []  # 存储损失为第几个epoch第几个batch损失下标列表
 model = vgg11() # 初始化模型
 # model.load_parameters(jt.load("model.pkl"))
+#如果已有训练的模型将上面的代码的注释取消，加载已有模型
 optimizer = nn.SGD(model.parameters(), learning_rate)  # 定义优化器
 # def train(model, train_loader, optimizer, epoch, losses, losses_idx):
 #     model.train()
